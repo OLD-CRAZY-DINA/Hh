@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    
+:root{
+    --background: #d1deec00;
+    --foreground: #f1f3f5;
+    --white: #fff;
+    --black: #000;
+    --gray: #6e6e6e;
+    --shadow: #76767663;
+    --border: #cfcfcf;
+    --bg-white: #2b2c44;
+}
+
+body{
+    background: var(--background);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #3a78ffec;
+}
+
+.home-center{
+    width: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+
+
+.dtz-event{
+    background: var(--bg-white);
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.dtz-event h2{
+    color: #00fff2;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+}
+
+.dtz-event span{
+    font-size: 10px;
+    float: right;
+    font-weight: 600;
+    color: var(--gray);
+    cursor: pointer;
+}
+.event{
+    display: flex;
+    flex-direction: column;
+}
+
+.event img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.event-date{
+    display: flex;
+    margin-bottom: 12px;
+}
+.event-date h3{
+    color: #1877f2;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    background: var(--bg-white);
+    padding: 6px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    border-radius: 6px;
+}
+.event-date h3 b{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}
+.event-date h4{
+    color: #fff;
+    font-size: 14px;
+}
+.event-date h4 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.event button{
+    padding: 6px;
+    background: #1877f2;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 18px;
+    transition: .4s;
+}
+.event button:hover{
+    background: #115cbd;
+    cursor: pointer;
+}
+.event button i{
+    margin-right: 6px;
+}
+
+
+</style>
+<body>
+    
+    <!-- Don't change -->
+            <div class="home-center">
+
+                  <!-- Change item --> 
+
+                   <div class="dtz-event">
+                    <div class="event">
+                        <h2>Upcoming Events <span>view all</span></h2>
+                        <img src="./eve.jpg" alt="dtz Upcoming img">
+                        <div class="event-date">
+                                <h3>21 <b>july</b></h3>
+                                <h4>United state of America <span>New York City</span></h4>
+                            </div>
+                             <button><i class="fa-regular fa-star"></i> View Channel</button>
+                        </div>
+                   </div>
+
+            </div>
+</body>
+</html>
